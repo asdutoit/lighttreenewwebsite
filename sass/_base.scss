@@ -1,0 +1,48 @@
+// COLOR VARIABLES
+$color-primary: #000;
+$color-secondary: #27a7df;
+
+// FONT VARIABLES
+$font-ak-bold: "akrobatbold", sans-serif;
+$font-ak-reg: "akrobatregular";
+$font-ak-thin: "akrobatthin";
+$font-ak-light: "akrobatlight";
+$font-ak-exbold: "akrobatextrabold";
+$font-ak-exlight: "akrobatextralight";
+$font-ak-semibold: "akrobatsemibold";
+$font-ak-black: "akrobatblack";
+
+// RESPONSIVE BREAKPOINTS
+$bp-hg: 81.25em; //1300px
+$bp-largest: 75em; // 1200px
+$bp-large: 66.75em; // 1000px
+$bp-medium: 50em; // 800px;
+$bp-small: 37.5em; // 600px;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 63.5%; // 10px / 16px = 62.5% = 1rem
+}
+
+body {
+  font-family: $font-ak-reg;
+  color: $color-primary;
+  font-weight: 300;
+  font-size: 2.6rem;
+  height: 1000px;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 9rem repeat(2, minmax(5rem, min-content));
+  grid-template-columns: repeat(12, 1fr);
+  // row-gap: 3rem;
+}
